@@ -82,10 +82,12 @@ wordpress:fortify mydomain.com / max
 composer (3.1+), discourse, drupal, ghost, joomla, laravel, nextcloud (3.1+), wordpress  
 
 ### WordPress
-(S) Bypassing bypassing plugin/theme updates  
+(S) **Bypassing bypassing plugin/theme updates**  
 *.wp-update-skip* in docroot, format: *name* or *theme:name* or *plugin:name* (newline delimited)  
-(S) Update core, theme, and plugins to latest  
-cpmd wordpress:update-all mydomain.com /  
+(S) **Update core, theme, and plugins to latest**  
+cpcmd wordpress:update-all mydomain.com /  
+(S) **Install WordPress**  
+cpcmd wordpress:install mydomain.com / '[ssl:true,email:contact@addr.com]'
 
 ## Alternative invocation
 (B) **Via browser**  
