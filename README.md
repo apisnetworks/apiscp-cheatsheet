@@ -108,7 +108,7 @@ DeleteDomain domain.com *invoice also accepted*
 ## DNS binding
 (A) **Attach provider/key to site**  
 EditDomain -c dns,provider=linode -c dns,key=abc1234567890  
-* (A) **Change global default provider**  
+(A) **Change global default provider**  
 cpcmd config:set dns.default-provider linode  
 cpcmd config:set dns.default-provider-key abc1235  
 EditDomain -c dns,provider=DEFAULT -c dns,provider_key=DEFAULT domain.com  
