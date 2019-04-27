@@ -12,9 +12,9 @@ cpmd [-d domain][-u user] module:command arg1 '[key:value]' null true
 # Management
 ## Versioning
 (A) **Set update policy to edge**  
-config:set apnscp.update-policy edge  
+cpcmd config:set apnscp.update-policy edge  
 (A) **Reset update policy to default**  
-config:set apnscp.update-policy major  
+cpcmd config:set apnscp.update-policy major  
 (A) **Update panel code**  
 upcp  
 (A) **Reset panel code**  
@@ -22,9 +22,9 @@ upcp --reset
 
 ## Bootstrapper
 (A) **Get all defaults**  
-config:get apnscp.bootstrapper  
+cpcmd config:get apnscp.bootstrapper  
 (A) **Override default**  
-config:set apnscp.bootstrapper name val  
+cpcmd config:set apnscp.bootstrapper name val  
 (A) **Run entire Bootstrapper**  
 upcp -sb  
 (A) **Run Bootstrapper component(s)**  
@@ -36,6 +36,7 @@ cpcmd config:set group.task value
 cpcmd config:get group.task  
 cpcmd config:info group.task  
 
+### Scope list
 apache.block10 *boolean* - toggle HTTP/1.0 disallowance  
 apache.evasive-whitelist *ip address* - whitelist an IP address, accepts wildcards (64.22.68.\*)  
 apnscp.debug *boolean* - place panel in debug mode  
@@ -48,6 +49,7 @@ system.integrity-check - run Bootstrapper, email results
 
 
 # API commands
+All invoked using CLI, cpcmd *module*:*function*. Full list via https://api.apnscp.com/namespace-none.html
 
 ## General
 (B) **Get panel version**  
@@ -131,7 +133,7 @@ EditDomain -c cgroup,cpu=10000 domain.com
 
 ## Shell helpers
 (A) **Get site configuration**  
-get_config siteinfo email domain.com  
+get_config domain.com siteinfo email  
 (A) **Override password**  
 temp_password domain.com  
 (A) **Switch to account admin**  
