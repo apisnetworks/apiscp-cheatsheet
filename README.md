@@ -1,3 +1,5 @@
+This cheatsheet is a quick reference for common commands, alternate usage, and fast navigation from within the command-line. Feel free to submit a PR on any additional commands you deem useful.
+
 **Legend**  
 *S*: Site Admin, *A*: Appliance Admin, *B*: Both  
 *FSPATH*: absolute filesystem path for site data  
