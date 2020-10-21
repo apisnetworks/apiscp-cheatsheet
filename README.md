@@ -1,3 +1,8 @@
+# Archived
+See [@thundersquared/apiscp-notes](https://github.com/thundersquared/apiscp-notes)
+
+---
+
 This cheatsheet is a quick reference for common commands, alternate usage, and fast navigation from within the command-line. Feel free to submit a PR on any additional commands you deem useful.
 
 **Legend**  
